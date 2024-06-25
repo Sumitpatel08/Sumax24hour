@@ -28,7 +28,7 @@ OWNER_ID = int(os.environ.get("OWNER_ID", "5284816025"))
 PORT = os.environ.get("PORT", "8080")
 
 #Database 
-DB_URI = "mongodb+srv://sunitverma080:lwYnQJB7WLC50xho@lodubot1.5w14taf.mongodb.net/?retryWrites=true&w=majority&appName=lodubot1"
+DB_URI = "mongodb+srv://sunitverma080:exxTbZntNrmYXJUJ@sumit080.tsditfv.mongodb.net/?retryWrites=true&w=majority&appName=Sumit080"
 DB_NAME = os.environ.get("DATABASE_NAME", "filesharexbot")
 
 SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "inshorturl.com")
@@ -47,7 +47,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "100"))
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "6367302898 5857939104").split()):
+    for x in (os.environ.get("ADMINS", "6367302898,5857939104").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
@@ -68,7 +68,7 @@ BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
 USER_REPLY_TEXT = "Join Posting Channel From  @Direct_vid For More Links/Files!"
 
 ADMINS.append(5284816025)
-ADMINS.append(6367302898)
+ADMINS.append(5284816025)
 
 LOG_FILE_NAME = "filesharingbot.txt"
 
